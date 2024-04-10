@@ -22,7 +22,7 @@ public class GraphsHandler {
 	private static final String PATH = "./src/";
 
 	private static List<IGraph<String>> listGraphs = new LinkedList<IGraph<String>>();
-	private static SortedSet<IGraph<String>> setGraphs = new TreeSet<IGraph<String>>(getEdgesComparator());
+	//private static SortedSet<IGraph<String>> setGraphs = new TreeSet<IGraph<String>>(getEdgesComparator());
 	private static SortedMap<String, SortedSet<IGraph<String>>> mapGraphs = new
 	 TreeMap<String, SortedSet<IGraph<String>>>();
 	private static List<String> errorsLists = new LinkedList<String>();
@@ -78,10 +78,6 @@ public class GraphsHandler {
 	private static void outPutCollections(String fileName) throws IOException {
 		Writer wr = getWriter(fileName + "GraphsOutList.txt");
 		outPutCollection(listGraphs, wr);
-		closeWriter(wr);
-
-		wr = getWriter(fileName + "GraphsSortOutSet.txt");
-		outPutCollection(setGraphs, wr);
 		closeWriter(wr);
 
 		wr = getWriter(fileName + "GraphsSortOutMap.txt");
