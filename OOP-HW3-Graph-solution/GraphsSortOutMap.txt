@@ -1,7 +1,0 @@
-DirectedGraph	aa:bb->cc bb: cc:cc dd: ee:aa
-DirectedGraph	A:B B:C->D C:A D:A->C
-DirectedGraph	A:B B:C->D C:A D:A->D
-DirectedGraph	A:B B:C->D C:A D:A->C
-UndirectedGraph	1:2 2:1->3 3:2
-UndirectedGraph	A:B B:A->C->D C:B D:B
-UndirectedGraph	aa:bb->cc->dd bb:aa cc:aa->dd dd:aa->cc ee:
