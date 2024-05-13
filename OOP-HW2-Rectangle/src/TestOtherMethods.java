@@ -22,25 +22,6 @@ public class TestOtherMethods {
 		rectangle5 = new TwoPointRectangle(new Point(1.0, 4.0), new Point(4.0, 2.0));		
 		rectangle6 = new TwoPointRectangle(new Point(-1.0, 1.0), new Point(1.0, -2.0));
 	}
-
-	@Test
-	public void testContains() {
-		assertTrue(rectangle1.containsPoint(new Point(0.5,0.5)));
-		assertTrue(rectangle2.containsPoint(new Point(3.5,2.5)));
-		assertTrue(rectangle3.containsPoint(new Point(0.0,0.0)));
-		assertTrue(rectangle4.containsPoint(new Point(0.5,0.5)));
-		assertTrue(rectangle5.containsPoint(new Point(3.5,2.5)));
-		assertTrue(rectangle6.containsPoint(new Point(0.0,0.0)));
-		
-		
-		assertFalse(rectangle1.containsPoint(new Point(1.0,1.5)));
-		assertFalse(rectangle2.containsPoint(new Point(1,4.1)));
-		assertFalse(rectangle3.containsPoint(new Point(-0.9,3)));
-		assertFalse(rectangle4.containsPoint(new Point(1.0,1.5)));
-		assertFalse(rectangle5.containsPoint(new Point(1,4.1)));
-		assertFalse(rectangle6.containsPoint(new Point(-0.9,3)));
-		
-	}
 	
 	@Test
 	public void testArea() {

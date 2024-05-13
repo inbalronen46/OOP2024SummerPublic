@@ -123,14 +123,6 @@ public interface Rectangle {
      */
     double perimeter();    
     
-
-    /**
-     * Determines whether a given point lies within the bounds of the rectangle.
-     *
-     * @param point The point to check.
-     * @return {@code true} if the point is within the rectangle, {@code false} otherwise.
-     */
-    boolean containsPoint(Point point);
     
     /**
      * Checks if another rectangle is equal to this one.
