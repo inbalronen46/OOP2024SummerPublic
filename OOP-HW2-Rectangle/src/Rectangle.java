@@ -98,16 +98,7 @@ public interface Rectangle {
      * Flips the rectangle horizontally around its bottom edge.
      */
     void flipHorizontal();
-    
-    /**
-     * Reflects the rectangle across the specified axes.
-     *
-     * @param xAxis {@code true} to reflect across the x-axis, {@code false} to not.
-     * @param yAxis {@code true} to reflect across the y-axis, {@code false} to not.
-     */
-    void reflect(boolean xAxis, boolean yAxis);
-    
-    
+        
     
     /**
     * Calculates the area of the rectangle.
