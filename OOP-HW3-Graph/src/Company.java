@@ -1,5 +1,5 @@
 public class Company  {
-    private String code; // Unique identifier for the course
+    private String code; // Unique identifier for the company
     private String name;
     private String location;
     

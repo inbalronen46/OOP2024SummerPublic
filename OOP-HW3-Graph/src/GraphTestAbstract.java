@@ -27,9 +27,9 @@ public abstract class GraphTestAbstract {
 	@Test
 	public void testAddVertex() {
 		graph.addVertex("A");
-		assertEquals(type + "A:{}", graph.toString());
+		assertEquals(type + "A:", graph.toString());
 		graph.addVertex("B");
-		assertEquals(type + "A:{} B:{}", graph.toString());
+		assertEquals(type + "A: B:", graph.toString());
 	}
 
 	@Test
@@ -39,7 +39,7 @@ public abstract class GraphTestAbstract {
 		graph.addVertex("C");
 		graph.addVertex("D");
 		graph.removeVertex("C");
-		assertEquals(type + "A:{} B:{} D:{}", graph.toString());
+		assertEquals(type + "A: B: D:", graph.toString());
 	}
 
 	@Test
@@ -48,7 +48,7 @@ public abstract class GraphTestAbstract {
 		graph.addVertex("B");
 		graph.addVertex("C");
 		graph.addVertex("D");
-		assertEquals(type + "A:{} B:{} C:{} D:{}", graph.toString());
+		assertEquals(type + "A: B: C: D:", graph.toString());
 	}
 
 	public void updateGraph() {
