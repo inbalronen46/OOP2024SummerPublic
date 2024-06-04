@@ -58,20 +58,20 @@ public interface IGraph<V extends Comparable<V>> {
 	 * The format differs for directed and undirected graphs:
 	 * 
 	 * Directed graphs:
-	 * "DirectedGraph" is followed by each vertex and its outgoing edges. Vertices are
+	 * "DirectedGraph:" is followed by each vertex and its outgoing edges. Vertices are
 	 * separated by spaces. Edges are denoted as "X->Y" for an edge from vertex X to vertex Y.
 	 * 
 	 * Undirected graphs:
-	 * "UndirectedGraph" is followed by each vertex and its incident edges. For undirected
+	 * "UndirectedGraph:" is followed by each vertex and its incident edges. For undirected
 	 * graphs, edges between vertices are represented as "X:Y", indicating an edge between
 	 * vertex X and vertex Y. Multiple edges for a vertex are separated by '->'.
 	 * 
 	 * Example (Directed):
-	 * "DirectedGraph A:B B:C->D C:A D:A->D" represents a directed graph with edges
+	 * "DirectedGraph:\tA:B B:C->D C:A D:A->D" represents a directed graph with edges
 	 * from A to B, B to C and D, C to A, and D to A and D itself.
 	 * 
 	 * Example (Undirected):
-	 * "UndirectedGraph A:B B:A->C->D C:B->D D:B->C" represents an undirected graph with
+	 * "UndirectedGraph:\tA:B B:A->C->D C:B->D D:B->C" represents an undirected graph with
 	 * edges (A,B), (B,C), (B,D), (C,D). These edges show bidirectional connections
 	 * between the vertices as described, with multiple edges for a vertex separated by '->'.
 	 *
