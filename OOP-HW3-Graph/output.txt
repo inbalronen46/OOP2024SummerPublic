@@ -1,0 +1,8 @@
+String entered: Hello
+Integer entered: 123
+Integer entered: 124
+String entered: World
+Integer entered: 456
+Integer entered: 12
+Integer entered: 13
+String entered: exit
