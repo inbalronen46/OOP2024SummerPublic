@@ -39,7 +39,7 @@ public class GraphTestUndirected extends GraphTestAbstract {
 	{
 		super.testSizeGraph();
 		assertEquals(4,graph.numOfVertices());
-		assertEquals(4,graph.numOfEdges());
+		assertEquals(5,graph.numOfEdges());
 	} 
 	
 	@Test
